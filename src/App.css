@@ -1,0 +1,30 @@
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.section-profile {
+  display: flex;
+}
+
+.span-container:first-child {
+    font-size: 70px;
+}
+
+.span-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-img-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  
+  aspect-ratio: 1 / 1;
+}
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1 / 1;
+}
