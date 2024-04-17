@@ -1,4 +1,31 @@
 {
-    "name": "Andrés Rodríguez",
-    "tag": "Full-Stack Web Developer"
+  "name": "Andrés Rodríguez",
+  "tag": "Full-Stack Web Developer",
+  "Contact": [
+    {
+      "name": "GitHub",
+      "link": "https://github.com/Andreserl2504",
+      "logo": "/src/assets/Icons/github.svg"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/and.sez/",
+      "logo": "/src/assets/Icons/instagram.svg"
+    }
+  ],
+  "aboutMe": "hi",
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "NodeJS",
+    "MySQL",
+    "React",
+    "Tailwind",
+    "Express",
+    "Python",
+    "PHP",
+    "Laravel"
+  ]
 }
