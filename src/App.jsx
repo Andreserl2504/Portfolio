@@ -24,44 +24,63 @@ function App() {
       </nav>
       <main className='portfolio'>
         <section className='section-profile'>
-          <div className='about-me-container'>
-            <div className='img'>
-              <img src='/src/assets/img.jpg' alt='' />
-              <span className='figure'></span>
+          <div className='name-container'>
+            <div className='span-container'>
+              <span>Hi! I am</span>
+              <span className='name'>{info.name}</span>
+              <span className='tag'>{info.tag}</span>
             </div>
-            <div>
-              <div className='span-container'>
-                <span>Hi! I am</span>
-                <span className='name'>{info.name}</span>
-                <span className='tag'>{info.tag}</span>
-              </div>
-              <div className='contact-container'>
-                <div className='social-container'>
-                  <div>
-                    {info.Contact.map((social) => (
-                      <a href={social.link} target='_blank' key={social.name}>
-                        <button className='social-btn'>
-                          <img src={social.logo} alt={social.name} />
-                          <span>{social.name}</span>
-                        </button>
-                      </a>
-                    ))}
+          </div>
+          <div className='img'>
+            <img src='/src/assets/toPortfolio-fake.png' alt='' />
+          </div>
+          <div className='about-me-grid'>
+            <div className='about-me-container-p'>
+              <p>{info.aboutMe}</p>
+            </div>
+            <div className='social-container'>
+              {info.Contact.map((social) => (
+                <a href={social.link} target='_blank' key={social.name}>
+                  <div className='social-img'>
+                    <img src={social.logo} alt={social.name} />
                   </div>
-                </div>
-                <div className='about-me-container-p'>
-                  <p>{info.aboutMe}</p>
-                </div>
-              </div>
+                </a>
+              ))}
             </div>
           </div>
         </section>
         <section className='skills-section'>
-          <h2>Skills</h2>
-          <section className='tec-container'>
-            {
-              info.skills.map(tec => (<Tag tec={tec} type={'icon'}/>))
-            }
+          <main className='main-skills'>
+            <h2>Skills</h2>
+            <section className='tec-container'>
+              {info.skills.map((tec) => (
+                <Tag key={tec} skill={tec + '.svg'} type={'icon'}>
+                  <div className='message-skill'>{tec}</div>
+                </Tag>
+              ))}
+            </section>
+          </main>
+          <section className='other-skills'>
+            <h3>Other Skills</h3>
+            <section className='tag-section'>
+              {info['other-skills'].languages.map((lang) => (
+                <Tag key={lang[0]} type={'tag'} tag={lang[0] + '-' + lang[1]} />
+              ))}
+            </section>
+            <section className='tag-section'>
+              {info['other-skills'].Others.map((skill) => (
+                <Tag
+                  key={skill}
+                  skill={skill + '.png'}
+                  type={'tag'}
+                  tag={skill}
+                />
+              ))}
+            </section>
           </section>
+        </section>
+        <section>
+          <h2>projects</h2>
         </section>
       </main>
     </>

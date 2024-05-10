@@ -13,7 +13,7 @@
       "logo": "/src/assets/Icons/instagram.svg"
     }
   ],
-  "aboutMe": "hi",
+  "aboutMe": "fua",
   "skills": [
     "HTML",
     "CSS",
@@ -27,5 +27,12 @@
     "Python",
     "PHP",
     "Laravel"
-  ]
+  ],
+  "other-skills": {
+    "languages": [
+      ["Spanish", "Native"],
+      ["English", "Intermediate"]
+    ],
+    "Others": ["Gimp"]
+  }
 }

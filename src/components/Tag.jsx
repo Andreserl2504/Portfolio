@@ -1,7 +1,9 @@
-export function Tag({ tec, type }) {
+export function Tag({ children, skill, type, tag }) {
   return (
     <div className={`${type}-container`}>
-      <img src={`/src/assets/skills/${tec}.svg`} alt={tec} />
+      {children && children}
+      {skill && <img src={`/src/assets/skills/${skill}`} alt={skill} />}
+      {tag && <span>{tag}</span>}
     </div>
   )
 }
