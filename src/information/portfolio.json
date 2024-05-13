@@ -13,20 +13,17 @@
       "logo": "/src/assets/Icons/instagram.svg"
     }
   ],
-  "aboutMe": "fua",
+  "aboutMe": "alkj laksjdlk oiduoi lkasjdllakjsd aisdoiauslkjasd alskjdoiu alskdj aiosd laksjdiasd laksjdi i alskjdi adjlqd q alskjd c ao o alksjda  p j adja  pap pasjd a p a jas apsdoa ",
   "skills": [
-    "HTML",
-    "CSS",
     "JavaScript",
     "TypeScript",
+    "React",
     "NodeJS",
     "MySQL",
-    "React",
     "Tailwind",
     "Express",
     "Python",
-    "PHP",
-    "Laravel"
+    "PHP"
   ],
   "other-skills": {
     "languages": [
@@ -34,5 +31,31 @@
       ["English", "Intermediate"]
     ],
     "Others": ["Gimp"]
-  }
+  },
+  "projects": [
+    {
+      "name": "Pokedex-React",
+      "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
+      "tecs": ["React", "JavaScript", "CSS"],
+      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
+      "Type": "Web",
+      "code": "https://github.com/Andreserl2504/Pokedex-React"
+    },
+    {
+      "name": "Pokedex-React",
+      "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
+      "tecs": ["React", "JavaScript", "CSS"],
+      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
+      "Type": "Web",
+      "code": "https://github.com/Andreserl2504/Pokedex-React"
+    }
+  ],
+  "libreries": [
+    {
+      "name": "Q-query",
+      "tecs": ["JavaScript"],
+      "gitHub": "",
+      "npm": ""
+    }
+  ]
 }

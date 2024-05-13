@@ -24,7 +24,7 @@ body {
 
 .section-profile {
   display: grid;
-  grid-template-columns: auto 5rem ;
+  grid-template-columns: auto 5rem;
   grid-template-rows: auto auto;
   align-items: center;
   gap: 1.5rem;
@@ -35,14 +35,38 @@ body {
   font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-/* .name-container {
-  grid-column: 1/3;
-} */
 .name {
+  position: relative;
   font-family: Bebas Neue, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 4.5rem;
+  font-size: 5rem;
+}
+.name::after {
+  content: 'Andrés Rodríguez';
+  z-index: -1;
+  user-select: none;
+  position: absolute;
+  left: -2px;
+  top: 2px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 217, 247, 1) 0%,
+    rgba(16, 193, 248, 1) 10%,
+    rgba(30, 171, 249, 1) 20%,
+    rgba(52, 136, 250, 1) 35%,
+    rgba(79, 95, 251, 1) 50%,
+    rgba(107, 52, 253, 1) 65%,
+    rgba(123, 28, 254, 1) 80%,
+    rgba(124, 26, 254, 1) 90%,
+    rgba(141, 0, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 3px -3px 150px var(--a-purple);
+}
+
+.name:hover .name::after {
+  opacity: 1;
 }
 
 nav {
@@ -150,25 +174,24 @@ nav {
   margin-bottom: 20px;
 }
 .about-me-grid {
+  max-width: 100%;
   grid-column: 1/3;
 }
 
 .skills-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
   gap: 50px;
 }
 
 .tec-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 }
 
-.tec-container :nth-child(10) > img {
+.tec-container :nth-child(8) > img {
   height: 4rem;
   width: 4rem;
 }
@@ -237,6 +260,7 @@ nav {
 }
 
 .message-skill {
+  display: none;
   opacity: 0;
   padding: 5px 10px 5px 10px;
   border-radius: 25px;
@@ -245,18 +269,120 @@ nav {
   text-align: center;
   position: absolute;
   top: -40px;
-  transition: opacity 0.5s;
+  animation: message-skill-opacity 0.5s ease-out both;
 }
 
 .icon-container:hover .message-skill {
-  opacity: 1;
+  display: inline;
+}
+
+.project-section {
+  font-family: 'Embed code', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.project-section > h2 {
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+}
+
+.project {
+  position: relative;
+  margin: 20px auto;
+  width: 300px;
+  height: auto;
+  background: #101324;
+  color: #fff;
+  border-radius: 15px;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  transition: 1s box-shadow;
+}
+
+.project:hover {
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover::before,
+.project:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background: #6424e0;
+  box-shadow: 0px 0px 10px 2px #6424e0;
+  border-radius: 15px;
+  z-index: -1;
+  animation: 1.5s clockwise infinite;
+}
+
+.project:hover:after {
+  background: #148dff;
+  box-shadow: 0px 0px 10px 2px #148dff;
+  animation: 3s counterclockwise infinite;
+}
+
+.project-preview-container {
+  width: 100%;
+  height: 4rem;
+}
+
+.project-preview {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+.project-info-container {
+  padding: 20px;
+}
+
+.project-description {
+  font-size: 15px;
+}
+
+.sticker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--primary-blue);
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.sticker-container > img {
+  width: 80%;
+  height: 80%;
+}
+
+.sticker-skills-container {
+  display: flex;
+  gap: 0.7rem;
+}
+
+@keyframes message-skill-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes enhance-nav {
   to {
     background-color: #fff4;
     backdrop-filter: blur(8px);
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -269,14 +395,80 @@ nav {
   }
 }
 
-@keyframes move-figure {
+@keyframes clockwise {
   0% {
-    transform: translateY(-5px);
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
   }
   50% {
-    transform: translatex(5px);
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
   }
   100% {
-    transform: translateY(7px);
+    top: -5px;
+    left: 0;
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
   }
 }

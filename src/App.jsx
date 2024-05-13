@@ -24,7 +24,7 @@ function App() {
       </nav>
       <main className='portfolio'>
         <section className='section-profile'>
-          <div className='name-container'>
+          <div>
             <div className='span-container'>
               <span>Hi! I am</span>
               <span className='name'>{info.name}</span>
@@ -79,8 +79,41 @@ function App() {
             </section>
           </section>
         </section>
-        <section>
+        <section className='project-section'>
           <h2>projects</h2>
+          <div className='project-container'>
+            {info.projects.map((project) => (
+              <div key={project.name} className='project'>
+                <div className='project-preview-container'>
+                  <img
+                    src={project.preview}
+                    alt={`${project.name} preview`}
+                    className='project-preview'
+                  />
+                </div>
+                <div className='project-info-container'>
+                  {project.name}
+                  <p className='project-description'>{project.description}</p>
+                  <div className='sticker-skills-container'>
+                    {project.tecs.map((tec) => (
+                      <Tag key={tec} skill={tec + '.svg'} type={'sticker'} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <h3>Libreries</h3>
+          <div>
+            {info.libreries.map((lib) => (
+              <div key={lib.name}>
+                <div>{lib.name}</div>
+                {lib.tecs.map((tec) => (
+                  <Tag key={tec} skill={tec + '.svg'} type={'sticker'} />
+                ))}
+              </div>
+            ))}
+          </div>
         </section>
       </main>
     </>
