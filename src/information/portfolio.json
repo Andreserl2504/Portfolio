@@ -22,8 +22,7 @@
     "MySQL",
     "Tailwind",
     "Express",
-    "Python",
-    "PHP"
+    "Python"
   ],
   "other-skills": {
     "languages": [
@@ -53,7 +52,7 @@
   "libreries": [
     {
       "name": "Q-query",
-      "tecs": ["JavaScript"],
+      "tec": "JavaScript",
       "gitHub": "",
       "npm": ""
     }

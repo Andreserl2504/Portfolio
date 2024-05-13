@@ -104,18 +104,34 @@ function App() {
             ))}
           </div>
           <h3>Libreries</h3>
-          <div>
+          <div className='libs-container'>
             {info.libreries.map((lib) => (
-              <div key={lib.name}>
-                <div>{lib.name}</div>
-                {lib.tecs.map((tec) => (
-                  <Tag key={tec} skill={tec + '.svg'} type={'sticker'} />
-                ))}
+              <div key={lib.name} className='lib'>
+                <div className='package-info'>
+                  <span className='package-name'>{lib.name}</span>
+                  <span className='tec-package'>{lib.tec}</span>
+                </div>
+                <div className='packages-container'>
+                  <a href={lib.gitHub} target='_blank'>
+                    <button className='package-link'>
+                      <img src='/src/assets/Icons/github.svg' alt='' />
+                    </button>
+                  </a>
+                  <a href={lib.npm} target='_blank'>
+                    <button className='package-link'>
+                      <img src='/src/assets/Icons/npm.svg' alt='' />
+                    </button>
+                  </a>
+                </div>
               </div>
             ))}
           </div>
         </section>
       </main>
+      <footer className='footer'>
+        <div>ajlskdjlaks</div>
+        <span>alksjdlkajs</span>
+      </footer>
     </>
   )
 }

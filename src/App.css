@@ -284,6 +284,9 @@ nav {
 .project-section > h2 {
   text-align: center;
 }
+.project-section > h3 {
+  text-align: center;
+}
 
 .project-container {
   display: flex;
@@ -367,6 +370,83 @@ nav {
 .sticker-skills-container {
   display: flex;
   gap: 0.7rem;
+}
+
+.libs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.lib {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  width: 200px;
+  background-color: var(--second-blue);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.lib:hover {
+  box-shadow: 0px 0px 10px 0px var(--a-purple);
+}
+.package-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: start;
+}
+
+.package-name {
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.tec-package {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--a-purple);
+  text-align: left;
+}
+
+.package-info > div {
+  background-color: transparent;
+}
+
+.package-info > div > img {
+  width: 50%;
+  height: 50%;
+}
+
+.packages-container {
+  display: flex;
+  align-items: end;
+  gap: 0.2rem;
+}
+
+.package-link {
+  background-color: var(--primary-blue);
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+}
+
+.package-link > img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background: rgb(11, 19, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(11, 19, 32, 0.8323704481792717) 0%,
+    rgba(34, 34, 34, 0) 100%
+  );
+  padding: 5rem;
 }
 
 @keyframes message-skill-opacity {
