@@ -1,6 +1,6 @@
 {
   "name": "Andrés Rodríguez",
-  "tag": "Full-Stack Web Developer",
+  "tag": "Desarrollador Web",
   "Contact": [
     {
       "name": "GitHub",
@@ -18,16 +18,16 @@
     "JavaScript",
     "TypeScript",
     "React",
+    "Tailwind",
     "NodeJS",
     "MySQL",
-    "Tailwind",
     "Express",
     "Python"
   ],
   "other-skills": {
     "languages": [
-      ["Spanish", "Native"],
-      ["English", "Intermediate"]
+      ["Español", "Nativo"],
+      ["Inglés", "Intermedio"]
     ],
     "Others": ["Gimp"]
   },
@@ -36,25 +36,17 @@
       "name": "Pokedex-React",
       "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
       "tecs": ["React", "JavaScript", "CSS"],
-      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
-      "Type": "Web",
-      "code": "https://github.com/Andreserl2504/Pokedex-React"
-    },
-    {
-      "name": "Pokedex-React",
-      "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
-      "tecs": ["React", "JavaScript", "CSS"],
-      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
+      "description": "El objetivo con este proyecto fue aprender React y como usar el objeto Intersection Observer.",
       "Type": "Web",
       "code": "https://github.com/Andreserl2504/Pokedex-React"
     }
   ],
   "libreries": [
     {
-      "name": "Q-query",
-      "tec": "JavaScript",
-      "gitHub": "",
-      "npm": ""
+      "name": "snag-query",
+      "tec": "TypeScript",
+      "gitHub": "https://github.com/Andreserl2504/Snag-query",
+      "npm": "https://www.npmjs.com/package/snag-query"
     }
   ]
 }
