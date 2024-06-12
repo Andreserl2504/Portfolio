@@ -36,7 +36,7 @@
       "name": "Pokedex-React",
       "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
       "tecs": ["React", "JavaScript", "CSS"],
-      "description": "El objetivo con este proyecto fue aprender React y como usar el objeto Intersection Observer.",
+      "description": "El objetivo con este proyecto fue aprender React JS y como usar el objeto Intersection Observer.",
       "Type": "Web",
       "code": "https://github.com/Andreserl2504/Pokedex-React"
     }
@@ -48,5 +48,6 @@
       "gitHub": "https://github.com/Andreserl2504/Snag-query",
       "npm": "https://www.npmjs.com/package/snag-query"
     }
-  ]
+  ],
+  "footer": "holaholahola"
 }

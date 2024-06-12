@@ -1,16 +1,20 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useLayoutEffect } from 'react'
-import { Portfolio } from './Portfolio'
-import './Portfolio.css'
+import { useLayoutEffect, useState } from 'react'
 import { Navigate } from 'react-router-dom'
-import { useState } from 'react'
+import { Portfolio } from './Portfolio'
 
 function App() {
   const [lang, setLang] = useState('')
   useLayoutEffect(() => {
-    setLang(navigator.languages[0])
+    const lang = navigator.languages[0]
+    if (lang.includes('en')) {
+      setLang('en')
+    } else if (lang.includes('es')) {
+      setLang('es')
+    } else {
+      setLang('en')
+    }
   }, [])
-
 
   return (
     <>
