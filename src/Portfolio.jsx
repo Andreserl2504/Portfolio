@@ -17,22 +17,20 @@ export function Portfolio() {
       navigate('/en')
     }
   }, [lang])
-  const navLinks = (e) => {
-    // e.preventDefault()
-  }
+
   return (
     <>
       {info && (
         <>
           <nav>
             <ul className='nav-ul'>
-              <a href='#About_me' onClick={(e) => navLinks(e)}>
+              <a href='#About_me'>
                 <li>{lang === 'en' ? 'About me' : 'Sobre mí'}</li>
               </a>
-              <a href='#Skills' onClick={(e) => navLinks(e)}>
+              <a href='#Skills'>
                 <li>{lang === 'en' ? 'Skills' : 'Habilidades'}</li>
               </a>
-              <a href='#Projects' onClick={(e) => navLinks(e)}>
+              <a href='#Projects'>
                 <li>{lang === 'en' ? 'Projects' : 'Proyectos'}</li>
               </a>
             </ul>
@@ -42,6 +40,18 @@ export function Portfolio() {
               <span>{lang === 'en' ? 'Spanish' : 'Inglés'}</span>
             </div>
           </Link>
+          <a
+            href={
+              lang === 'en'
+                ? 'https://drive.google.com/file/d/1l-J8heo4-o7S_RlEPibNV0oujW65qrS7/view?usp=drive_link'
+                : 'https://drive.google.com/file/d/113oza1-FAPsee7AaKz8UvYz9MurWk2nC/view?usp=drive_links'
+            }
+            target='_blank'
+          >
+            <div className='CV-btn'>
+              <span>{lang === 'en' ? 'Curriculum' : 'Currículum'}</span>
+            </div>
+          </a>
           <main className='portfolio'>
             <section className='section-profile' id='About_me'>
               <div className='section-profile-container'>
@@ -53,7 +63,7 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className='img'>
-                  <img src='/src/assets/toPortfolio-fake.png' alt='' />
+                  <img src='/src/assets/to-Portfolio.jpg' alt='' />
                 </div>
                 <div className='about-me-grid'>
                   <div className='about-me-container-p'>
@@ -122,14 +132,31 @@ export function Portfolio() {
                       <p className='project-description'>
                         {project.description}
                       </p>
-                      <div className='sticker-skills-container'>
-                        {project.tecs.map((tec) => (
-                          <Tag
-                            key={tec}
-                            skill={tec + '.svg'}
-                            type={'sticker'}
-                          />
-                        ))}
+                      <div className='icons-container-projects'>
+                        <div className='sticker-skills-container'>
+                          {project.tecs.map((tec) => (
+                            <Tag
+                              key={tec}
+                              skill={tec + '.svg'}
+                              type={'sticker'}
+                            />
+                          ))}
+                        </div>
+                        <div className='links-web'>
+                          <a href={project.links.gitHub} target='_blank'>
+                            <button className='package-link'>
+                              <img src='/src/assets/Icons/github.svg' alt='' />
+                            </button>
+                          </a>
+                          <a href={project.links.web} target='_blank'>
+                            <button className='package-link'>
+                              <img
+                                src='/src/assets/Icons/internet.svg'
+                                alt=''
+                              />
+                            </button>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
