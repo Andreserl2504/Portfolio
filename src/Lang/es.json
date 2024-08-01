@@ -51,7 +51,7 @@
     {
       "name": "Acortador de URL",
       "preview": "/projects-preview/URL-Shorter-preview.png",
-      "tecs": ["Typescript", "Express", "Sqlite", "React", "Tanstack"],
+      "tecs": ["TypeScript", "Express", "Sqlite", "React", "Tanstack"],
       "description": "Quise enseñar mis habilidades Full-stack, entonces hice este sencillo proyecto donde uso la mayoría de las cosas que sé.",
       "Type": "Web",
       "links": {
