@@ -51,7 +51,7 @@
     {
       "name": "URL Shorter",
       "preview": "/projects-preview/URL-Shorter-preview.png",
-      "tecs": ["Typescript", "Express", "Sqlite", "React", "Tanstack"],
+      "tecs": ["TypeScript", "Express", "Sqlite", "React", "Tanstack"],
       "description": "I wanted to show my Full-Stack knowledge, so I made a simple project where I use the most things I know.",
       "Type": "Web",
       "links": {
@@ -68,5 +68,5 @@
       "npm": "https://www.npmjs.com/package/snag-query"
     }
   ],
-  "footer": "hihihihihihi"
+  "footer": "💙👨‍💻"
 }
