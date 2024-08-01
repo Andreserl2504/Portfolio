@@ -5,17 +5,17 @@
     {
       "name": "GitHub",
       "link": "https://github.com/Andreserl2504",
-      "logo": "/src/assets/Icons/github.svg"
+      "logo": "/Icons/github.svg"
     },
     {
       "name": "Instagram",
       "link": "https://www.instagram.com/and.sez/",
-      "logo": "/src/assets/Icons/instagram.svg"
+      "logo": "/Icons/instagram.svg"
     },
     {
       "name": "Linkedin",
       "link": "https://www.linkedin.com/in/andres-rodriguez-a06ba2312/",
-      "logo": "/src/assets/Icons/linkedin.svg"
+      "logo": "/Icons/linkedin.svg"
     }
   ],
   "aboutMe": "I have a year of experience as an autodidact web developer and I’m committed to keep learning to be a professional full-stack. My passion to improve drives me to search constantly new challenges and acquire new knowledge.",
@@ -39,24 +39,24 @@
   "projects": [
     {
       "name": "Pokedex-React",
-      "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
+      "preview": "/projects-preview/Pokedex-React.PNG",
       "tecs": ["React", "JavaScript", "CSS"],
       "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
       "Type": "Web",
       "links": {
         "gitHub": "https://github.com/Andreserl2504/Pokedex-React",
-        "web": ""
+        "web": "https://pokedex-react-dusky-phi.vercel.app/"
       }
     },
     {
       "name": "URL Shorter",
-      "preview": "/src/assets/projects-preview/URL-Shorter-preview.png",
+      "preview": "/projects-preview/URL-Shorter-preview.png",
       "tecs": ["Typescript", "Express", "Sqlite", "React", "Tanstack"],
-      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
+      "description": "I wanted to show my Full-Stack knowledge, so I made a simple project where I use the most things I know.",
       "Type": "Web",
       "links": {
         "gitHub": "https://github.com/Andreserl2504/URL-shorter",
-        "web": ""
+        "web": "https://shurlter.vercel.app/"
       }
     }
   ],

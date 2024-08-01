@@ -480,6 +480,7 @@ nav {
   box-shadow: 0px 0px 4px var(--a-purple);
   padding: 0.5rem 1rem;
   border-radius: 99999px;
+  z-index: 9999;
 }
 
 .links-web {
@@ -504,6 +505,7 @@ nav {
   box-shadow: 0px 0px 4px var(--a-purple);
   padding: 0.5rem 1rem;
   border-radius: 99999px;
+  z-index: 9999;
 }
 
 @keyframes message-skill-opacity {

@@ -63,7 +63,7 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className='img'>
-                  <img src='/src/assets/to-Portfolio.jpg' alt='' />
+                  <img src='public/to-Portfolio.jpg' alt='' />
                 </div>
                 <div className='about-me-grid'>
                   <div className='about-me-container-p'>
@@ -145,13 +145,13 @@ export function Portfolio() {
                         <div className='links-web'>
                           <a href={project.links.gitHub} target='_blank'>
                             <button className='package-link'>
-                              <img src='/src/assets/Icons/github.svg' alt='' />
+                              <img src='/Icons/github.svg' alt='' />
                             </button>
                           </a>
                           <a href={project.links.web} target='_blank'>
                             <button className='package-link'>
                               <img
-                                src='/src/assets/Icons/internet.svg'
+                                src='/Icons/internet.svg'
                                 alt=''
                               />
                             </button>
@@ -173,12 +173,12 @@ export function Portfolio() {
                     <div className='packages-container'>
                       <a href={lib.gitHub} target='_blank'>
                         <button className='package-link'>
-                          <img src='/src/assets/Icons/github.svg' alt='' />
+                          <img src='/Icons/github.svg' alt='' />
                         </button>
                       </a>
                       <a href={lib.npm} target='_blank'>
                         <button className='package-link'>
-                          <img src='/src/assets/Icons/npm.svg' alt='' />
+                          <img src='/Icons/npm.svg' alt='' />
                         </button>
                       </a>
                     </div>

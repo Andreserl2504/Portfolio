@@ -5,17 +5,17 @@
     {
       "name": "GitHub",
       "link": "https://github.com/Andreserl2504",
-      "logo": "/src/assets/Icons/github.svg"
+      "logo": "/Icons/github.svg"
     },
     {
       "name": "Instagram",
       "link": "https://www.instagram.com/and.sez/",
-      "logo": "/src/assets/Icons/instagram.svg"
+      "logo": "/Icons/instagram.svg"
     },
     {
       "name": "Linkedin",
       "link": "https://www.linkedin.com/in/andres-rodriguez-a06ba2312/",
-      "logo": "/src/assets/Icons/linkedin.svg"
+      "logo": "/Icons/linkedin.svg"
     }
   ],
   "aboutMe": "Tengo un año de experiencia como desarrollador web autodidacta y estoy comprometido en seguir formándome para ser un profesional full-stack. Mi pasión por mejorar me impulsa a buscar constantemente nuevos desafíos y adquirir nuevos conocimientos.",
@@ -39,24 +39,24 @@
   "projects": [
     {
       "name": "Pokedex-React",
-      "preview": "/src/assets/projects-preview/Pokedex-React.PNG",
+      "preview": "/projects-preview/Pokedex-React.PNG",
       "tecs": ["React", "JavaScript", "CSS"],
       "description": "El objetivo con este proyecto fue aprender React JS y como usar el objeto Intersection Observer.",
       "Type": "Web",
       "links": {
         "gitHub": "https://github.com/Andreserl2504/Pokedex-React",
-        "web": ""
+        "web": "https://pokedex-react-dusky-phi.vercel.app/"
       }
     },
     {
       "name": "Acortador de URL",
-      "preview": "/src/assets/projects-preview/URL-Shorter-preview.png",
+      "preview": "/projects-preview/URL-Shorter-preview.png",
       "tecs": ["Typescript", "Express", "Sqlite", "React", "Tanstack"],
-      "description": "The goal with this project was learn React JS and how to use the object intersection observer.",
+      "description": "Quise enseñar mis habilidades Full-stack, entonces hice este sencillo proyecto donde uso la mayoría de las cosas que sé.",
       "Type": "Web",
       "links": {
         "gitHub": "https://github.com/Andreserl2504/URL-shorter",
-        "web": ""
+        "web": "https://shurlter.vercel.app/"
       }
     }
   ],
