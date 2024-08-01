@@ -63,7 +63,7 @@ export function Portfolio() {
                   </div>
                 </div>
                 <div className='img'>
-                  <img src='to-Portfolio.jpg' alt='' />
+                  <img src='to-portfolio/to-portfolio.jpg' />
                 </div>
                 <div className='about-me-grid'>
                   <div className='about-me-container-p'>
