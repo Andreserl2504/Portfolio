@@ -148,14 +148,19 @@ export function Portfolio() {
                               <img src='/Icons/github.svg' alt='' />
                             </button>
                           </a>
-                          <a href={project.links.web} target='_blank'>
-                            <button className='package-link'>
-                              <img
-                                src='/Icons/internet.svg'
-                                alt=''
-                              />
-                            </button>
-                          </a>
+                          {
+                            project.links.web ?? (
+                              <a href={project.links.web} target='_blank'>
+                                <button className='package-link'>
+                                  <img
+                                    src='/Icons/internet.svg'
+                                    alt=''
+                                  />
+                                </button>
+                              </a>
+                            )
+                          }
+                          
                         </div>
                       </div>
                     </div>
