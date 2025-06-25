@@ -149,7 +149,7 @@ export function Portfolio() {
                             </button>
                           </a>
                           {
-                            project.links.web !== undefined ?? (
+                            project.links.web !== undefined ? (
                               <a href={project.links.web} target='_blank'>
                                 <button className='package-link'>
                                   <img
@@ -158,9 +158,8 @@ export function Portfolio() {
                                   />
                                 </button>
                               </a>
-                            )
+                            ) : (<div></div>)
                           }
-                          
                         </div>
                       </div>
                     </div>
